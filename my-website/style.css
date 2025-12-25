@@ -1,0 +1,315 @@
+/* ---------------- Font Imports ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400&display=swap');
+
+/* ---------------- Reset / Base ---------------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace; /* Body text */
+  background: #ffffff;
+  color: #d95a5a; /* Default body color */
+  line-height: 1.7;
+}
+
+/* ---------------- Header / Site Title ---------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 100;
+  text-align: center;
+  padding: 96px 24px 32px;
+}
+
+/* Home page + inner page headers */
+.site-title {
+  font-family: 'Bebas Neue', sans-serif; /* Home page title */
+  margin: 0 0 28px;
+  font-size: 3.0rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+/* ---------------- Navigation ---------------- */
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* subtle divider */
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-family: 'Space Mono', monospace; /* nav links */
+}
+
+.site-nav a:hover {
+  opacity: 0.55;
+}
+
+/* ---------------- Fade-in Animation ---------------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-content,
+.page-content {
+  animation: fadeUp 0.8s ease-out both;
+}
+
+/* ---------------- Home Page Videos ---------------- */
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 64px 24px 160px;
+}
+
+.video {
+  margin-bottom: 50px;
+}
+
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+/* ---------------- Inner Pages ---------------- */
+.page-content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 96px 24px 160px;
+  color: #d95a5a; /* Optional: darker body text for inner pages */
+}
+.about-page {
+  max-width: 1160px;
+}
+/* Inner page headers */
+.page-content h2,
+.page-content h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.page-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 4px;
+  letter-spacing: 0.04em;
+}
+
+.page-content h3 {
+  font-size: 1.8rem;
+  margin-top: 50px;
+  margin-bottom: 4px;
+}
+
+/* Paragraphs, lists, links */
+.page-content p,
+.page-content li,
+.page-content a {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.page-content ul {
+  padding-left: 20px;
+}
+
+.page-content li {
+  margin-bottom: 3px;
+}
+
+/* Optional: subtle link styling */
+.page-content a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------------- Inner Page Body Text ---------------- */
+.page-content p,
+.page-content li {
+  font-size: 1.05rem;   /* try 0.95–1.05rem */
+  line-height: 1.7;
+}
+
+/* ---------------- Text + Image Layout (Stable) ---------------- */
+.text-image {
+  display: flex;
+  gap: 60px;          /* space between text and image */
+  align-items: flex-start;  /* aligns top of text and image */
+  margin-top: 4px;
+}
+
+/* Image column */
+.side-image {
+  width: 472px;   /* pick whatever looks good */
+  max-width: 100%; 
+  height: 493px;
+  object-fit: contain;
+}
+
+/* ---------------- List spacing (Projects & Performances) ---------------- */
+.page-content ul {
+  padding-left: 20px; /* keeps bullets aligned nicely */
+}
+
+.page-content li {
+  margin-bottom: 16px; /* ← controls space between bullet lines */
+}
+
+/* ---------------- Inline Links (Canva-style) ---------------- */
+.page-content a {
+  color: #d95a5a;                 /* same color as text */
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.page-content a:hover {
+  opacity: 0.6;
+}
+
+/* ---------------- Contact Page Extras ---------------- */
+.contact-icons {
+  margin-top: 12px;
+  margin-bottom: 64px;
+  justify-content: flex-start; /* aligns under email text */
+}
+
+/* Remove underline from icon links */
+.social-icons a {
+  text-decoration: none;
+}
+
+/* Boxed social icons */
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px; /* subtle square */
+  text-decoration: none;
+  color: #d95a5a;
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.newsletter {
+  max-width: 520px;
+  color: #d95a5a;
+}
+
+.newsletter-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+}
+
+/* ---------------- Contact Two-Column Layout ---------------- */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 80px;
+  align-items: start;
+  margin-top: 32px;
+}
+
+/* Left column */
+.contact-info p {
+  margin-bottom: 16px;
+}
+
+/* Newsletter */
+.contact-newsletter iframe {
+  width: 100%;
+  height: 320px;
+  border: none;
+  opacity: 0.95;
+
+}
+/* ================= MOBILE STYLES ================= */
+
+/* Contact page: stack columns */
+@media (max-width: 800px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+/* About page: stack image + text (Squarespace behavior) */
+@media (max-width: 768px) {
+  .text-image {
+     display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+    .text-image .text {
+    width: 100%;
+  }
+
+  .side-image {
+    width: 100%;
+    height: auto;
+    order: -1; /* image above text */
+  }
+}
+
+/* Global mobile tweaks */
+@media (max-width: 600px) {
+  .site-header {
+    padding-top: 72px;
+  }
+
+  .site-title {
+    font-size: 2.1rem;
+  }
+
+  .site-nav {
+    gap: 24px;
+  }
+
+  .video {
+    margin-bottom: 64px;
+  }
+
+  .page-content {
+    padding: 72px 16px 120px;
+  }
+}
