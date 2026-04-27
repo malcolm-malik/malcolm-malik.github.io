@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   font-family: 'Space Mono', monospace; /* Body text */
-  background: #bebebe;
+  background: #d3d3d3;
   color: #d95a5a; /* Default body color */
   line-height: 1.7;
 }
@@ -22,7 +22,7 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  background: #bebebe;
+  background: #d3d3d3;
   z-index: 100;
   text-align: center;
   padding: 96px 24px 32px;
