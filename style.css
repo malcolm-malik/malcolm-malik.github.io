@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   font-family: 'Space Mono', monospace; /* Body text */
-  background: #a9a9a9;
+  background: #bebebe;
   color: #d95a5a; /* Default body color */
   line-height: 1.7;
 }
@@ -22,7 +22,7 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  background: #a9a9a9;
+  background: #bebebe;
   z-index: 100;
   text-align: center;
   padding: 96px 24px 32px;
@@ -224,7 +224,7 @@ body {
 
 .social-icons a:hover {
   background: #1a1a1a;
-  color: #a9a9a9;
+  color: #bebebe;
 }
 
 .newsletter {
