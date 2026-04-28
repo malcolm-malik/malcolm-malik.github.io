@@ -2,16 +2,15 @@
   "items": [
     {
       "type": "text",
-      "content": "I'm currently:"
+      "html": "I'm currently:"
     },
     {
       "type": "text",
-      "content": "Building a DIY theremin with Bela."
-    },
-    {
-      "type": "link",
-      "text": "Bela Starter Kit",
-      "url": "https://youtu.be/4K_IyCcPBuo?si=zT7MBhobXmi8DZ61"
+      "html": "Building a DIY theremin with <a href='https://youtu.be/4K_IyCcPBuo?si=zT7MBhobXmi8DZ61' target='_blank'>Bela</a>."
     }
+      {
+      "type": "text",
+      "html": "And a custom travel guitar"
+    },
   ]
 }
