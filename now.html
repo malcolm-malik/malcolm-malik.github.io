@@ -34,7 +34,7 @@
         data.items.forEach(item => {
           if (item.type === "text") {
             const p = document.createElement("p");
-            p.textContent = item.content;
+            p.innerHTML = item.html || item.content;
             container.appendChild(p);
           }
 
