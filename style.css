@@ -265,6 +265,8 @@ body {
 
 /* ---------------- Now Page ---------------- */
 
+/* ---------------- Now Page ---------------- */
+
 .now-page h2 {
   font-family: 'Bebas Neue', sans-serif;
 }
@@ -275,17 +277,38 @@ body {
   margin-bottom: 32px;
 }
 
+/* Card container */
+.now-card {
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 32px;
+  max-width: 640px;
+}
+
+/* Typography inside card */
 .now-card p,
-.now-card li {
+.now-card li,
+.now-card a {
   font-family: 'Space Mono', monospace;
 }
 
+/* List styling */
 .now-card ul {
   padding-left: 18px;
 }
 
 .now-card li {
   margin-bottom: 12px;
+}
+
+/* Link styling (matches your site) */
+.now-card a {
+  color: #d95a5a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.now-card a:hover {
+  opacity: 0.6;
 }
 /* ================= MOBILE STYLES ================= */
 
