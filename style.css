@@ -263,52 +263,25 @@ body {
 
 }
 
-/* ---------------- Now Page ---------------- */
-
-/* ---------------- Now Page ---------------- */
+/* ---------------- Now Page: Google Doc Embed ---------------- */
 
 .now-page h2 {
   font-family: 'Bebas Neue', sans-serif;
 }
 
-.now-intro {
-  font-family: 'Space Mono', monospace;
-  max-width: 640px;
-  margin-bottom: 32px;
-}
-
-/* Card container */
-.now-card {
+.doc-frame-wrap {
+  width: 100%;
+  max-width: 760px;
   border: 1px solid rgba(0,0,0,0.12);
-  padding: 32px;
-  max-width: 640px;
+  overflow: hidden;
 }
 
-/* Typography inside card */
-.now-card p,
-.now-card li,
-.now-card a {
-  font-family: 'Space Mono', monospace;
-}
-
-/* List styling */
-.now-card ul {
-  padding-left: 18px;
-}
-
-.now-card li {
-  margin-bottom: 12px;
-}
-
-/* Link styling (matches your site) */
-.now-card a {
-  color: #d95a5a;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.now-card a:hover {
-  opacity: 0.6;
+.doc-frame {
+  width: 100%;
+  height: 720px;
+  border: none;
+  display: block;
+  background: #ffffff;
 }
 /* ================= MOBILE STYLES ================= */
 
