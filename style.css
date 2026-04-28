@@ -263,7 +263,7 @@ body {
 
 }
 
-/* ---------------- Now Page: Google Doc Embed ---------------- */
+/* ---------------- NOW PAGE (Google Docs) ---------------- */
 
 .now-page h2 {
   font-family: 'Bebas Neue', sans-serif;
@@ -274,6 +274,7 @@ body {
   max-width: 760px;
   border: 1px solid rgba(0,0,0,0.12);
   overflow: hidden;
+  margin-top: 24px;
 }
 
 .doc-frame {
@@ -283,6 +284,7 @@ body {
   display: block;
   background: #ffffff;
 }
+
 /* ================= MOBILE STYLES ================= */
 
 /* Contact page: stack columns */
