@@ -22,71 +22,63 @@
 
   <main class="page-content now-page">
     <h2>Now</h2>
-
-    <div class="doc-frame-wrap">
-      <iframe
-        src="https://docs.google.com/document/d/e/2PACX-1vQIWefnoIqnXUkwO6DzFzb86s_HIbQTpmc8AYCidaxfJuSB5blBg-oolxsE-OCzqAUsqaaefs2SlCka/pub?embedded=true"
-        class="doc-frame"
-        title="Now">
-      </iframe>
-    </div>
+    <div id="now-content"></div>
   </main>
-<main class="page-content now-page">
-  <h2>Now</h2>
-  <div id="now-content"></div>
-</main>
 
-<script>
-fetch("/now.json")
-  .then(response => response.json())
-  .then(data => {
-    const container = document.getElementById("now-content");
+  <script>
+    fetch("/now.json")
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById("now-content");
 
-    data.items.forEach(item => {
-      if (item.type === "text") {
-        const p = document.createElement("p");
-        p.textContent = item.content;
-        container.appendChild(p);
-      }
+        data.items.forEach(item => {
+          if (item.type === "text") {
+            const p = document.createElement("p");
+            p.textContent = item.content;
+            container.appendChild(p);
+          }
 
-      if (item.type === "link") {
-        const p = document.createElement("p");
-        const a = document.createElement("a");
-        a.href = item.url;
-        a.textContent = item.text;
-        a.target = "_blank";
-        a.rel = "noopener";
-        p.appendChild(a);
-        container.appendChild(p);
-      }
+          if (item.type === "link") {
+            const p = document.createElement("p");
+            const a = document.createElement("a");
+            a.href = item.url;
+            a.textContent = item.text;
+            a.target = "_blank";
+            a.rel = "noopener";
+            p.appendChild(a);
+            container.appendChild(p);
+          }
 
-      if (item.type === "image") {
-        const img = document.createElement("img");
-        img.src = item.src;
-        img.alt = item.alt || "";
-        img.className = "now-image";
-        container.appendChild(img);
-      }
+          if (item.type === "image") {
+            const img = document.createElement("img");
+            img.src = item.src;
+            img.alt = item.alt || "";
+            img.className = "now-image";
+            container.appendChild(img);
+          }
 
-      if (item.type === "youtube") {
-        const videoId = item.url.split("v=")[1]?.split("&")[0] || item.url.split("/").pop();
+          if (item.type === "youtube") {
+            const videoId =
+              item.url.split("v=")[1]?.split("&")[0] ||
+              item.url.split("/").pop();
 
-        const wrapper = document.createElement("div");
-        wrapper.className = "now-video";
+            const wrapper = document.createElement("div");
+            wrapper.className = "now-video";
 
-        wrapper.innerHTML = `
-          <iframe
-            src="https://www.youtube.com/embed/${videoId}"
-            title="YouTube video"
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
-        `;
+            wrapper.innerHTML = `
+              <iframe
+                src="https://www.youtube.com/embed/${videoId}"
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            `;
 
-        container.appendChild(wrapper);
-      }
-    });
-  });
-</script>
+            container.appendChild(wrapper);
+          }
+        });
+      });
+  </script>
+
 </body>
 </html>
