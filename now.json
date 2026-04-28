@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "type": "text",
+      "content": "I'm currently:"
+    },
+    {
+      "type": "text",
+      "content": "Building a DIY theremin with Bela."
+    },
+    {
+      "type": "link",
+      "text": "Bela Starter Kit",
+      "url": "https://shop.bela.io/collections/bela-and-bela-mini/products/bela-starter-kit"
+    },
+    {
+      "type": "image",
+      "src": "images/your-image.jpg",
+      "alt": "A project image"
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=XS1dOhUFvRk"
+    }
+  ]
+}
