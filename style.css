@@ -263,19 +263,37 @@ body {
 
 }
 
-/* ---------------- Now Page Dynamic Content ---------------- */
+/* ---------------- Now Page ---------------- */
+
+.now-page {
+  max-width: 750px;
+}
+
+.now-page h2 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+#now-content {
+  margin-top: 32px;
+}
 
 #now-content p,
-#now-content a {
+#now-content a,
+#now-content li {
   font-family: 'Space Mono', monospace;
   font-size: 1.05rem;
   line-height: 1.7;
+  color: #1a1a1a;
 }
 
 #now-content a {
   color: #d95a5a;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+#now-content a:hover {
+  opacity: 0.6;
 }
 
 .now-image {
