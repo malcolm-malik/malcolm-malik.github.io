@@ -13,12 +13,5 @@
       "text": "Bela Starter Kit",
       "url": "https://youtu.be/4K_IyCcPBuo?si=zT7MBhobXmi8DZ61"
     },
-    {
-      "type": "image",
-      "src": "images/your-image.jpg",
-      "alt": "A project image"
-    },
-    {
-      "type": "youtube",
-      "url":
-    }
+  ]
+}
