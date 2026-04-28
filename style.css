@@ -275,21 +275,18 @@ body {
   margin-bottom: 32px;
 }
 
-.notion-frame-wrap {
-  width: 100%;
-  max-width: 760px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 0;
-  overflow: hidden;
+.now-card p,
+.now-card li {
+  font-family: 'Space Mono', monospace;
 }
 
-.notion-frame {
-  width: 100%;
-  height: 700px;
-  border: none;
-  display: block;
+.now-card ul {
+  padding-left: 18px;
 }
 
+.now-card li {
+  margin-bottom: 12px;
+}
 /* ================= MOBILE STYLES ================= */
 
 /* Contact page: stack columns */
