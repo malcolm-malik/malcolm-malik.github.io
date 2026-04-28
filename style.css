@@ -262,6 +262,33 @@ body {
   opacity: 0.95;
 
 }
+
+/* ---------------- Now Page ---------------- */
+
+.now-page h2 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.now-intro {
+  font-family: 'Space Mono', monospace;
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+
+.notion-frame-wrap {
+  width: 100%;
+  max-width: 760px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0;
+  overflow: hidden;
+}
+
+.notion-frame {
+  width: 100%;
+  height: 700px;
+  border: none;
+  display: block;
+}
 /* ================= MOBILE STYLES ================= */
 
 /* Contact page: stack columns */
