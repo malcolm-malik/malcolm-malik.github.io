@@ -59,61 +59,70 @@ body {
   opacity: 0.55;
 }
 
-/* ---------------- Theme variables ---------------- */
+/* ---------------- Theme Variables ---------------- */
 
 :root {
   --bg: #ffffff;
-  --text: #1a1a1a;
-  --accent: #d95a5a;
+  --text: #1a1a1a;      /* normal text */
+  --accent: #d95a5a;    /* red */
   --border: rgba(0, 0, 0, 0.12);
 }
 
 body.dark-mode {
   --bg: #111111;
-  --text: #f2f2f2;
-  --accent: #ff8a8a;
+  --text: #f2f2f2;      /* white */
+  --accent: #7aa2ff;    /* blue */
   --border: rgba(255, 255, 255, 0.18);
 }
 
-/* Apply variables */
+/* Base */
 body {
   background: var(--bg);
 }
 
+/* Header */
 .site-header {
   background: var(--bg);
+}
+
+.site-title {
+  color: var(--accent);
 }
 
 .site-nav {
   border-bottom: 1px solid var(--border);
 }
 
-.site-title,
-.site-nav a,
+.site-nav a {
+  color: var(--accent);
+}
+
+/* Page headings stay accent color */
+.page-content h2,
+.page-content h3 {
+  color: var(--accent);
+}
+
+/* Regular body text switches black/white */
 .page-content p,
 .page-content li,
-.page-content h2,
-.page-content h3,
 #now-content p,
 #now-content li {
   color: var(--text);
 }
 
+/* Links stay accent color */
 .page-content a,
-#now-content a,
-.social-icons a,
-.theme-toggle {
+#now-content a {
   color: var(--accent);
 }
 
-.social-icons a {
-  border-color: var(--border);
-}
-
+/* Theme toggle */
 .theme-toggle {
   margin-top: 24px;
   background: none;
   border: 1px solid var(--border);
+  color: var(--accent);
   font-family: 'Space Mono', monospace;
   font-size: 0.75rem;
   padding: 8px 14px;
@@ -122,6 +131,23 @@ body {
 
 .theme-toggle:hover {
   opacity: 0.6;
+}
+
+/* Social icons */
+.social-icons a {
+  color: var(--accent);
+  border-color: var(--border);
+}
+
+.social-icons a:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+/* Optional: make boxes adapt too */
+.contact-newsletter iframe,
+.now-video iframe {
+  border-color: var(--border);
 }
 
 /* ---------------- Fade-in Animation ---------------- */
