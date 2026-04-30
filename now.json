@@ -6,7 +6,15 @@
     },
     {
       "type": "text",
+      "html": "Been learning 3D modeling, 3D printing, and CNC operation for about 3 months" 
+    },
+     {
+      "type": "text",
       "html": "Building a DIY theremin with <a href='https://youtu.be/4K_IyCcPBuo?si=zT7MBhobXmi8DZ61' target='_blank'>bela</a>."
+    }
+    {
+      "type": "text",
+      "html": "Also building a travel guitar"
     }
   ]
 }
