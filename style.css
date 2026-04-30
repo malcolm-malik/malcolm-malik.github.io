@@ -59,6 +59,64 @@ body {
   opacity: 0.55;
 }
 
+/* ---------------- Dark Mode ---------------- */
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --accent: #d95a5a;
+  --border: rgba(0, 0, 0, 0.12);
+}
+
+body.dark-mode {
+  --bg: #111111;
+  --text: #f2f2f2;
+  --accent: #ff7a7a;
+  --border: rgba(255, 255, 255, 0.18);
+}
+
+body {
+  background: var(--bg);
+  color: var(--accent);
+}
+
+.site-header {
+  background: var(--bg);
+}
+
+.site-nav {
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav a,
+.page-content p,
+.page-content li,
+#now-content p,
+#now-content li {
+  color: var(--text);
+}
+
+.page-content a,
+#now-content a,
+.social-icons a {
+  color: var(--accent);
+}
+
+.theme-toggle {
+  margin-top: 24px;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  opacity: 0.6;
+}
+
 /* ---------------- Fade-in Animation ---------------- */
 @keyframes fadeUp {
   from {
