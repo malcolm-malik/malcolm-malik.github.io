@@ -97,7 +97,7 @@ body {
 .page-content {
   max-width: 750px;
   margin: 0 auto;
-  padding: 56px 24px 160px;
+  padding: 48px 24px 160px;
   color: #d95a5a; /* Optional: darker body text for inner pages */
 }
 .about-page {
