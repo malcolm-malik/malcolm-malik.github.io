@@ -59,7 +59,8 @@ body {
   opacity: 0.55;
 }
 
-/* ---------------- Dark Mode ---------------- */
+/* ---------------- Theme variables ---------------- */
+
 :root {
   --bg: #ffffff;
   --text: #1a1a1a;
@@ -70,13 +71,13 @@ body {
 body.dark-mode {
   --bg: #111111;
   --text: #f2f2f2;
-  --accent: #ff7a7a;
+  --accent: #ff8a8a;
   --border: rgba(255, 255, 255, 0.18);
 }
 
+/* Apply variables */
 body {
   background: var(--bg);
-  color: var(--accent);
 }
 
 .site-header {
@@ -87,9 +88,12 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+.site-title,
 .site-nav a,
 .page-content p,
 .page-content li,
+.page-content h2,
+.page-content h3,
 #now-content p,
 #now-content li {
   color: var(--text);
@@ -97,15 +101,19 @@ body {
 
 .page-content a,
 #now-content a,
-.social-icons a {
+.social-icons a,
+.theme-toggle {
   color: var(--accent);
+}
+
+.social-icons a {
+  border-color: var(--border);
 }
 
 .theme-toggle {
   margin-top: 24px;
   background: none;
   border: 1px solid var(--border);
-  color: var(--accent);
   font-family: 'Space Mono', monospace;
   font-size: 0.75rem;
   padding: 8px 14px;
